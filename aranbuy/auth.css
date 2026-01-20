@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================= ROOT (FROM YOUR SITE) ================= */
+:root{
+    --white-clr: #fff;
+    --black-clr: #000;
+    --light-black: #333;
+    --primary-clr: #e6303d;
+    --secondary-clr: #eee;
+    --tag-clr: #7cc576;
+}
+
+/* ================= PAGE LAYOUT ================= */
+.auth-section{
+    min-height: 100vh;
+    background: var(--secondary-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* ================= AUTH CARD ================= */
+.auth-box{
+    background: var(--white-clr);
+    width: 100%;
+    max-width: 420px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* ================= HEADINGS ================= */
+.auth-box h2{
+    font-size: 2rem;
+    color: var(--light-black);
+    margin-bottom: .5rem;
+}
+
+.auth-subtitle{
+    font-size: .95rem;
+    color: #6e6e6e;
+    margin-bottom: 2.2rem;
+}
+
+/* ================= FORM (YOUR STYLE) ================= */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form h3{
+    font-size: 1.4rem;
+}
+
+/* INPUT CONTAINER (INSPIRED BY SUBSCRIBE FORM) */
+.input-container{
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: .9rem 1rem;
+}
+
+/* ICON */
+.input-container i{
+    color: #777;
+    margin-right: .8rem;
+    font-size: .95rem;
+}
+
+/* INPUT */
+.input-container input{
+    border: none;
+    background: transparent;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.input-container input:focus{
+    outline: none;
+}
+
+/* ================= BUTTON (YOUR SITE BUTTON) ================= */
+button{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .9rem;
+    padding: .8rem 2.2rem;
+    text-transform: uppercase;
+    color: var(--white-clr);
+    border: none;
+    background: var(--primary-clr);
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    background: var(--light-black);
+}
+
+/* ================= SWITCH LINK ================= */
+.auth-switch{
+    margin-top: 1.6rem;
+    font-size: .9rem;
+    color: #6e6e6e;
+}
+
+.auth-switch a{
+    color: var(--primary-clr);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.auth-switch a:hover{
+    text-decoration: underline;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 500px){
+    .auth-box{
+        padding: 2.2rem 1.8rem;
+    }
+
+    .auth-box h2{
+        font-size: 1.7rem;
+    }
+}

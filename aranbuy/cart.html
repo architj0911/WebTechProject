@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart | AranBuy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar flex container">
+    <a href="index.php" class="logo">
+      Aran<span>Buy.</span>
+    </a>
+
+    <ul class="navlist flex">
+      <li><a href="index.php" class="link">Home</a></li>
+      <li><a href="index.php#best-sale" class="link">Shop</a></li>
+
+      <li class="nav-icons flex">
+        <a href="cart.html" class="icon icon-active cart-icon">
+          <i class="fa-solid fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+
+    <a href="#" class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  </nav>
+</header>
+
+<!-- ===== CART PAGE ===== -->
+<main class="cart-page">
+  <h2>Your Shopping Cart</h2>
+
+  <!-- Items -->
+  <div id="cartItems"></div>
+
+  <!-- Total -->
+  <div class="cart-total" id="cartTotal"></div>
+</main>
+
+<!-- ===== SCRIPTS (ORDER IMPORTANT) ===== -->
+<script src="cart-utils.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>

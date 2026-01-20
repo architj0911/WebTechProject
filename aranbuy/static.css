@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================= ROOT (SAME AS SITE) ================= */
+:root{
+    --white-clr: #fff;
+    --black-clr: #000;
+    --light-black: #333;
+    --primary-clr: #e6303d;
+    --secondary-clr: #eee;
+    --tag-clr: #7cc576;
+}
+
+/* ================= BODY ================= */
+body{
+    background: var(--secondary-clr);
+    color: var(--light-black);
+}
+
+/* ================= FIX NAVBAR OVERLAP ================= */
+/* Because navbar is fixed */
+.static-wrapper{
+    padding-top: 7.5rem; /* FIXES CONTENT HIDING */
+    padding-bottom: 4rem;
+}
+
+/* ================= PAGE CONTAINER ================= */
+.static-page{
+    max-width: 900px;
+    margin: auto;
+    background: var(--white-clr);
+    padding: 3rem 2.8rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ================= TITLE ================= */
+.static-page h1{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.static-line{
+    width: 70px;
+    height: 3px;
+    background: var(--primary-clr);
+    margin: 0 auto 2.5rem;
+}
+
+/* ================= SECTIONS ================= */
+.static-section{
+    margin-bottom: 3rem;
+}
+
+.static-section h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--light-black);
+}
+
+.static-section p{
+    font-size: .97rem;
+    line-height: 1.9rem;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* ================= LISTS ================= */
+.static-section ul{
+    margin-left: 1.2rem;
+    margin-top: .5rem;
+}
+
+.static-section ul li{
+    list-style: disc;
+    font-size: .95rem;
+    color: #666;
+    line-height: 1.8rem;
+    margin-bottom: .6rem;
+}
+
+/* ================= HIGHLIGHT BOX ================= */
+.static-highlight{
+    background: #fafafa;
+    border-left: 4px solid var(--primary-clr);
+    padding: 1.4rem 1.6rem;
+    font-size: .95rem;
+    color: #555;
+    line-height: 1.8rem;
+    margin: 2.5rem 0;
+}
+
+/* ================= DIVIDER ================= */
+.static-divider{
+    height: 1px;
+    background: #eee;
+    margin: 3rem 0;
+}
+
+/* ================= LINK BUTTON ================= */
+.static-btn{
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: .7rem 2.2rem;
+    background: var(--primary-clr);
+    color: var(--white-clr);
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.static-btn:hover{
+    background: var(--light-black);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px){
+    .static-page{
+        padding: 2.2rem 1.6rem;
+    }
+
+    .static-page h1{
+        font-size: 1.9rem;
+    }
+
+    .static-section h2{
+        font-size: 1.35rem;
+    }
+
+    .static-section p{
+        font-size: .93rem;
+    }
+}

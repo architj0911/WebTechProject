@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Products | AranBuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- Main site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Search page CSS -->
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar flex container">
+        <a href="index.php" class="logo">
+            Aran<span>Buy.</span>
+        </a>
+
+        <ul class="navlist flex">
+            <li>
+                <a href="index.php" class="link">Home</a>
+            </li>
+            <li>
+                <a href="index.php#best-sale" class="link">Shop</a>
+            </li>
+            <li class="nav-icons flex">
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+</header>
+
+<!-- ================= SEARCH PAGE ================= -->
+<main class="search-page">
+    <div class="container">
+
+        <h2>Search Products</h2>
+        <div class="line"></div>
+
+        <!-- SEARCH BAR -->
+        <div class="search-bar">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- SEARCH RESULTS -->
+        <div class="card-container flex wrap" id="searchResults"></div>
+
+    </div>
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="cart-utils.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>
